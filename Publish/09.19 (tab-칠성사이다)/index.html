@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칠성사이다</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <header>
+        <h1><img src="./images/logo.png" alt=""></h1>
+        <nav>
+            <ul>
+                <li><a href="#">기업소개</a></li>
+                <li><a href="#">홍보센터</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">ESG</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">오픈이노베이션</a></li>
+            </ul>
+        </nav>
+        <ul class="gnb">
+            <li><a href="#">검색</a></li>
+            <li>|</li>
+            <li><a href="#">ENG</a></li>
+            <li>|</li>
+            <li><a href="#">고객지원</a></li>
+            <li>|</li>
+            <li><a href="#"><img src="./images/logo_chill_mall.png" alt="">
+                </a></li>
+        </ul>
+    </header>
+    <section id="sect1">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+                <div class="swiper-slide slide5">
+                    <p>언제 어디서나, 모든 순간<br>
+                        고객의 곁에서 함께합니다.</p>
+                </div>
+                <div class="swiper-slide slide6">
+                    <p>맑고 깨끗한 제품으로,<br>
+                        건강한 생태계 환경을 만듭니다.</p>
+                </div>
+                <div class="swiper-slide slide7">
+                    <p>끊임없는 혁신과 변화를 통해,<br>
+                        더 큰 미래를 향해 나아갑니다.</p>
+                </div>
+            </div>
+
+            <div class="slide-menu">
+                <ul class="paging-menu">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <a href="#" class="pause">pause</a>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> -->
+        </div>
+
+        </div>
+    </section>
+    <section id="sect2">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // loop 마지막 페이지이후 끊기지 않고 첫번째 페이지가 보일 수 있도록(연결될 수)
+        var swiper1 = new Swiper(".mySwiper1", {
+            speed: 1000,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            }
+        });
+        const liElems = document.querySelectorAll('ul.paging-menu li')
+        // 슬라이드를 오토플레이 상황에서 몇번째를 보이고 있는건지 확인
+        swiper1.on('slideChange', function () {
+            // 해당번째 인덱스값을 get
+            // realIndex는 loop를 사용을 위해(loop가 없다면 activeIdx)
+            let activeIdx = swiper1.realIndex;
+            liElems.forEach(function (item) {
+                item.classList.remove('on')
+            })
+            // li모두를 읽으면 배열로 지정되어진다.
+            liElems[activeIdx].classList.add('on')
+
+        })
+        // 모든 li를 대상으로 ~ 각각의 li요소
+        liElems.forEach(function (liElem, idx) {
+            // console.log(liElem,idx);
+            // 각각 li
+            liElem.addEventListener('click', function (e) {
+                e.preventDefault()
+                // 모든 li
+                liElems.forEach(function (item) {
+                    item.classList.remove('on')
+                })
+                // 각각 활성화
+                liElem.classList.add('on')
+                console.log(idx)
+                swiper1.slideToLoop(idx, 500)
+            })
+        })
+
+        document.querySelector('a.pause').addEventListener('click', function (e) {
+            e.preventDefault()
+            this.classList.toggle('active')
+            // active 클래스가 존재
+            let sw = this.classList.contains('active')
+            if (sw) {
+                swiper1.autoplay.stop()
+            }
+            else {
+                swiper1.autoplay.start()
+            }
+        })
+        document.querySelector('a.prev').addEventListener('click', function (e) {
+            e.preventDefault()
+            swiper1.slideprev()
+        })
+        document.querySelector('a.next').addEventListener('click', function (e) {
+            e.preventDefault()
+            swiper1.slidenext()
+        })
+    </script>
+    </body>
+
+</html>

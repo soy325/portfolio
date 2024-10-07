@@ -1,0 +1,160 @@
+@import url(/reset.css);
+
+header {
+    height: 110px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        padding: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    >ul {
+        display: flex;
+        width: 40%;
+
+        a {
+            display: block;
+        }
+
+        .main-menu {
+            flex: 1;
+            font-size: 18px;
+            position: relative;
+
+            >a {
+                width: 100%;
+                padding: 37px 10px;
+                text-align: center;
+            }
+
+            .sub-menu {
+                width: 100%;
+                display: none;
+                background: #fff;
+                position: absolute;
+                border-top: 5px solid #f47a20;
+                padding: 0 10px;
+                font-size: 12px;
+
+                a {
+                    padding: 10px 0;
+                    border-bottom: 1px solid #aaa;
+                    color: #aaa;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: #f47a20;
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+
+}
+
+section {
+    &.sect1 {
+        height: 100vh;
+        background-image: url(./image/bg_visual.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+
+        .intro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+
+            h2 {
+                background-image: url(./image/bracket_title.png);
+                background-repeat: no-repeat;
+                width: 370px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, .5);
+                letter-spacing: 10px;
+                font-size: 20px;
+            }
+
+            p {
+                line-height: 78px;
+                font-size: 50px;
+                letter-spacing: 20px;
+                font-weight: 500;
+
+                span {
+                    display: inline-block;
+                    border-bottom: 1px solid #f47a20;
+                    color: #f47a20;
+                }
+            }
+        }
+    }
+
+    &.sect2 {
+        height: 100vh;
+        position: relative;
+
+        .menu {
+            position: absolute;
+            left: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            z-index: 99;
+
+            a.home {
+                height: 100px;
+                display: block;
+                background-color: #f47a20;
+
+            }
+
+            ul {
+                li {
+                    height: 100px;
+                    background-color: rgba(0, 0, 0, .7);
+
+                    a {
+                        color: #fff;
+                        opacity: .7;
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &.on a {
+                        color: #f47a20;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &.sect3 {
+        height: 530px;
+    }
+}
+
+
+
+footer {
+    height: 530px;
+}

@@ -1,0 +1,292 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* 공통속성 ***********/
+body {
+    background: url(./images/b-img01\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center bottom;
+}
+
+section {
+    max-width: 1240px;
+    margin: 100px auto;
+    gap: 20px;
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header ************/
+header {
+    position: relative;
+}
+
+.sunny {
+    width: 60px;
+    position: absolute;
+    top: -30%;
+    right: 36%;
+    animation: rotate-center 7s infinite;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.rocket {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    animation: slide-tr 7s infinite alternate;
+}
+
+@-webkit-keyframes slide-tr {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px) translateX(100px);
+        transform: translateY(-100px) translateX(100px)
+    }
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header p {
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+}
+
+article {
+    position: relative;
+}
+
+/* section ***********/
+article svg {
+    position: absolute;
+}
+
+.article1 svg {
+    top: -13%;
+    left: -14%;
+}
+
+.article2 svg {
+    top: -22%;
+    left: 54%;
+}
+
+.article3 svg {
+    top: -10%;
+    left: 76%;
+}
+
+.article1,
+.article2,
+.article3 {
+    height: 370px;
+    border-radius: 20px;
+}
+
+.article4 {
+    height: 100px;
+    justify-content: space-between;
+}
+
+.item {
+    background: #fff;
+    border-radius: 20px;
+}
+
+
+
+.article1 {
+    background: rgb(229, 54, 123);
+}
+
+.article2 {
+    background: rgb(0, 66, 164);
+    position: relative;
+}
+
+.article3 {
+    background: rgb(243, 204, 8);
+    position: relative;
+}
+
+/* article1 */
+.article1 h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 30px;
+}
+
+.article1 li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.article1 a {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.article1 img {
+    position: absolute;
+    top: 7%;
+    right: 8%;
+}
+
+/* article2 */
+.article2 h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 30px;
+}
+
+.article2 a.main img {
+    width: 340px;
+    position: absolute;
+    top: 22%;
+    left: 7%;
+}
+
+.article2 a.button img {
+    position: absolute;
+    top: 7%;
+    left: 83%;
+}
+
+/* article3 */
+.article3 h2 {
+    font-size: 23px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.article3 img {
+    position: absolute;
+    left: 22%;
+    top: 23%;
+}
+
+.infor {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #fff;
+}
+
+
+
+
+
+/* 반응형 웹페이지 설정 */
+/* 모바일 */
+@media screen and (max-width:767px) {
+    h1 img {
+        width: 291px;
+    }
+
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        width: 100%;
+    }
+
+}
+
+/* 테블릿 */
+@media screen and (min-width: 768px) {
+    h1 img {
+        width: 306px;
+    }
+
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        width: 50%;
+    }
+}
+
+/* pc */
+@media screen and (min-width:1024px) {
+    h1 img {
+        width: 400px;
+    }
+
+    .article1,
+    .article2,
+    .article3 {
+        width: calc(33.3333% - 20px);
+    }
+
+    .article4 {
+        display: flex;
+        width: calc(100% - 20px);
+    }
+
+    .item {
+        width: 32%;
+    }
+
+}

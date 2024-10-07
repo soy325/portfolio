@@ -1,0 +1,181 @@
+@import url(./reset.css);
+@import url(./font.css);
+body {
+  font-family: "Binggrae";
+}
+
+.inner {
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 840px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  gap: 60px;
+}
+nav > ul li.main-menu {
+  position: relative;
+}
+nav > ul li.main-menu a {
+  display: block;
+  font-size: 14px;
+}
+nav > ul li.main-menu a span {
+  display: block;
+  padding: 10px 0;
+}
+nav > ul li.main-menu > a {
+  height: 41px;
+  border: 1px solid #f00;
+  text-align: center;
+  font-weight: 600;
+  overflow: hidden;
+}
+nav > ul li.main-menu > a::before {
+  position: absolute;
+  display: block;
+  font-family: "jt-font";
+  content: "\e910";
+  color: #ed4043;
+  font-size: 9px;
+  left: 50%;
+  transform: translate(-50%);
+  top: -15px;
+  opacity: 0;
+}
+nav > ul li.main-menu > a .menu-inner {
+  position: relative;
+  top: -38px;
+  transition: 0.35s;
+}
+nav > ul li.main-menu > a:hover .menu-inner {
+  top: 0;
+}
+nav > ul li.main-menu > a:hover::before {
+  opacity: 1;
+}
+nav > ul li.main-menu ul.sub-menu {
+  display: none;
+  position: absolute;
+}
+nav > ul li.main-menu:hover > a {
+  color: rgb(237, 64, 67);
+}
+
+section h2 {
+  position: absolute;
+  gap: 50px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 99;
+  color: #fff;
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+}
+section h2 span {
+  font-size: 30px;
+}
+section ul.friend {
+  position: absolute;
+  display: flex;
+  gap: 50px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+section ul.friend li {
+  text-align: center;
+}
+
+article {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+article.on {
+  display: flex;
+}
+article .desc {
+  background: #ed4043;
+  width: 50%;
+  position: relative;
+}
+article .desc .desc-inner {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+article .desc .desc-inner h3 {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+article .desc .desc-inner h3 span {
+  font-size: 36px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+article .desc .desc-inner p {
+  font-size: 16px;
+  line-height: 30px;
+}
+article .chracter {
+  width: 50%;
+  position: relative;
+}
+article .chracter img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+article .chracter figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  opacity: 0.3;
+  color: #fff;
+  font-family: "Binggrae-B";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.chracter1 {
+  background: #ffcc00;
+}
+
+.chracter2 {
+  background: #0ad17c;
+}
+
+.chracter3 {
+  background: #0bcacb;
+}
+
+.chracter4 {
+  background: #ffae08;
+}
+
+.chracter5 {
+  background: #fbd04d;
+}
+
+.chracter6 {
+  background: #404475;
+}/*# sourceMappingURL=style.css.map */
