@@ -1,0 +1,150 @@
+@import url(./reset.css);
+@font-face {
+  font-family: "Interop";
+  src: url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(bg);
+  overflow: hidden;
+  font-family: "Interop";
+}
+
+header {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #252525;
+  z-index: 99;
+}
+header nav {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  padding: 20px 30px;
+}
+header nav li {
+  font-family: "SBAggroB";
+  font-weight: lighter;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 1px solid #FFF;
+}
+header nav li:hover {
+  color: rgb(255, 255, 30);
+}
+header nav li.on {
+  color: rgb(255, 255, 30);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+section {
+  display: flex;
+  position: relative;
+  top: 0;
+  margin-left: 200px;
+  height: 100vh;
+}
+
+article figcaption {
+  padding: 0 10px;
+  width: 100%;
+}
+article figcaption .inner {
+  border: 2px solid rgb(195, 216, 255);
+}
+article figcaption h2 {
+  font-family: "SBAggroB";
+  text-align: center;
+  padding: 25px 0;
+}
+article figcaption h3 {
+  font-size: 20px;
+  display: inline-block;
+  background: rgb(195, 216, 255);
+  padding: 7px 8px 5px 8px;
+  border-radius: 10px 10px 0 0;
+  margin-left: 10px;
+}
+article figcaption .col {
+  padding: 10px 0;
+}
+article figcaption p {
+  font-size: 18px;
+  padding: 10px 0;
+}
+article figcaption .summary {
+  padding: 10px 0;
+}
+article figcaption .summary p {
+  line-height: 30px;
+}
+
+.btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 1px;
+  display: flex;
+}
+.btn a {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.btn a:hover, .btn a.on {
+  background: rgba(255, 0, 0, 0.5);
+}
+.btn a.prev {
+  display: none;
+}
+
+.Character h2 {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0;
+}
+.Character ul {
+  padding: 0 10px;
+}
+.Character ul figure {
+  display: flex;
+}
+.Character ul figure img {
+  height: 100px;
+}
+.Character ul figure h4 {
+  font-size: 15px;
+}
+.Character ul figure p {
+  font-size: 13px;
+}
+.Character ul figure .name p {
+  font-size: 12px;
+  padding: 0%;
+}
+.Character ul figure.even {
+  flex-direction: row-reverse;
+}
+.Character ul li {
+  border-bottom: 2px solid rgb(195, 216, 255);
+  padding-top: 20px;
+}
+.Character ul li.bd {
+  border-bottom: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./images/logo.png" alt=""></h1>
+        <nav>
+            <ul>
+                <li>Intro</li>
+                <li class="on">Movie</li>
+                <li>Store</li>
+                <li>Event</li>
+                <li>Toy</li>
+                <li>Figure</li>
+                <li>GHIBLI Museum</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="art1">
+            <figure>
+                <img src="./images/하울의 움직이는 성.jpg" alt="">
+                <figcaption>
+                    <div class="col">
+                        <h2>"세상을 뒤흔드는<br>
+                            거대한 마법의 성이 걸어온다!"
+                        </h2>
+                        <h3>Genre</h3>
+                        <div class="inner">
+                            <p>애니메이션, 다크 판타지, 멜로, 드라마 , 스팀펑크</p>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <h3>synopsis</h3>
+                        <div class="inner">
+                            <p> 배경은 19세기 말의 유럽을 모티브로 하였으나 현실과 달리 마법이 존재하고기계가 발달한 세상. 모자가게에서 일하는 18살 소녀 소피는 어느날 골목길에서 마주친 짓궂은
+                                군인들에 의해 곤란한 상황에 처하게 되는데 웬 잘생긴 남자, 즉 하울이 나타나서 그녀를 구해준다. 하울과 헤어진 후에 느닷없이 황야의 마녀가 그녀를 찾아오고 황야의
+                                마녀는 하울에 대해서 묻더니 돌연 소피를 90세 먹은 노파로 만들어버린다.</p>
+                            <p>노파가 된 소피는 사람들의 눈을 피해 아무도 없는 황무지로 향하는데...</p>
+                            <p>우연히 덤불숲에 쳐박힌 것을 구해준 허수아비 카브의 도움으로 황야를 돌아다니는 하울의 움직이는 성 안으로 들어가게 된다. 그리고 그 성 안에서 하울과 그의 제자
+                                마르클, 그리고
+                                불의 악마 캘시퍼와 함께 살게 되면서 펼쳐지는 이야기</p>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <div class="Character">
+                <h2>Character</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./images/소피.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>소피</h4>
+                                    <p>Sophie / ソフィー</p>
+                                </div>
+                                <p>어린 소녀지만 황야의 마녀의 마법 때문에 90살의 늙은 할머니 모습이 되어버렸다. 하지만 삶을 여유롭게 포용할 수 있는 마음의 소유자.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/하울.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>하울</h4>
+                                    <p>Howl / ハウル</p>
+                                </div>
+                                <p>하울의 움직이는 성의 주인이자 뛰어난 마법사. 훈훈한 외모로 여성들의 심장을 빼앗아간다는 으스스한 소문의 주인공이기도 하다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/황야의 마녀.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>황야의 마녀</h4>
+                                    <p>Witch of the Waste / 荒地の魔女</p>
+                                </div>
+                                <p>본래 킹스베리 왕실의 마법시였으나 하울처럼 악마와 계약하고 황야로 쫓겨난 탓에 황야의 마녀라 불린다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/캘시퍼.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>캘시퍼</h4>
+                                    <p>Calcifer / カルシファー</p>
+                                </div>
+                                <p>하울이 어렸을 때 하울과 계약을 맺고 하울의 심장을 가진 대신, 하울의 성에 묶여 동력원 겸 관리자가 된다.하울의 심장을 가지고 있어 캘시퍼가 죽으면
+                                    하울도 죽는다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bd">
+                        <figure>
+                            <img src="./images/마르클.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>마르클</h4>
+                                    <p>Markl / マルクル</p>
+                                </div>
+                                <p>하울의 제자 겸 살림살이, 그리고 하울 대신 손님을 상대하는 담당이다.<br>
+                                    손님을 상대할 때는 할아버지처럼 변신하게 해주는 망토를 뒤집어쓰고 손님을 상대한다. </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="art2">
+            <figure>
+                <img src="./images/마녀배달부.jpg" alt="">
+                <figcaption>
+                    <div class="col">
+                        <h2>"초보마녀의<br>
+                            특별한 모험이 시작된다!"
+                        </h2>
+                        <h3>Genre</h3>
+                        <p class="inner">애니메이션, 드라마, 가족, 판타지</p>
+                    </div>
+                    <div class="summary">
+                        <h3>synopsis</h3>
+                        <div class="inner">
+                            <p> 만 13세가 된 수습 마녀는 어엿한 마녀가 되기 위해서 다른 마을에 가서 1년 동안 부모를 떠나 자립해서 수행해야 하는데, 이윽고 키키가 만 13세가 되자
+                                마녀가 없는 마을을 찾아 여행을 떠나고, 대도시에 도착한다. 하지만 그곳에 마녀를 반겨주는 사람은 없었고 키키는 풀죽어 마을을 헤매다 마음씨 좋은 빵집 주인 오소노를
+                                만나고 그 곳에서 살면서 마녀의 빗자루 타는 능력을 활용해 택배 사업을 시작한다.</p>
+                            <p>한편, 하늘을 나는 것에 관심이 많은 소년 톰보와 자상한 성격의 할머니, 자유분방한 여성 화가 우르술라 등을 만나면서 키키는 점점 성장해 나가는데...</p>
+                        </div>
+
+                    </div>
+
+                </figcaption>
+            </figure>
+            <div class="Character">
+                <h2>Character</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./images/키키.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>키키</h4>
+                                    <p>Kiki / キキ</p>
+                                </div>
+                                <p>극 중 주인공으로 마녀가 13살이 되면 수행을 위해 독립해야 한다는 전통에 따라, 마녀 키키는 고양이 지지와 함께 부모님과 고향 마을을 떠나게 된다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/지지.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>지지</h4>
+                                    <p>JiJi /ジジ</p>
+                                </div>
+                                <p>키키가 데리고 다니는 검은 고양이. 70살에 가까운 할아버지 연령대다. 동물들과도 대화할 수 있으며 키키에게 이를 통역해주기도 한다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/고키리.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>고키리</h4>
+                                    <p>Go-kiri /コキリ</p>
+                                </div>
+                                <p>키키의 엄마로 옛날 마녀들만큼 마법을 능수능란하게 다루지는 못한다. 다만 약을 만드는 솜씨는 뛰어나서 마을 사람들이 종종 찾아온다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/오키노.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>오키노</h4>
+                                    <p>Okino / オキノ</p>
+                                </div>
+                                <p>마녀와 결혼한 평범한 인간으로 키키의 아빠다. 민속학자로 요정이나 마녀에 관련된 전설과 민담을 연구한다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/오소노.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>오소노</h4>
+                                    <p>Osonor /おソノ</p>
+                                </div>
+                                <p>키키가 새로 정착한 마을에서 신세를 지는 빵집의 주인이다. 타지 사람에 초면인 키키에게 선뜻 방도 내어주고, 자기 가게에서 키키가 택배를 접수하는 것도 허락하는 등 여러 모로 마음씨가 넓은 사람이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bd">
+                        <figure   class="even">
+                            <img src="./images/코포리.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>코포리 / 톰보</h4>
+                                    <p>Coppory /コポリ / トンボ</p>
+                                </div>
+                                <p>키키가 정착한 마을의 남자 친구로 하늘을 날고 싶어한다.<br>
+                                    톰보는 애칭으로 코포리가 본명이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="art3">
+            <figure>
+                <img src="./images/이웃집 토토로.jpg" alt="">
+                <figcaption>
+                    <h2>"숲속에 살고 있는<br>
+                        특별한 친구를 만났다!"</h2>
+                    <div class="col">
+                        <h3>Genre</h3>
+                        <p  class="inner">애니메이션, 드라마</p>
+                    </div>
+                    <div class="summary">
+                        <h3>synopsis</h3>
+                        <div class="inner">
+                            <p> 어머니의 치료를 위해 도시에서 작은 시골마을에 온 사츠키와 메이 자매. 집을 청소하던 중 메이는 작은 요정 토토로들을 만나게 된다.</p>
+                            <p> 토토로들과 친구가 되며 여러 모험을 하는 사츠키와 메이, 그러던 중 어머니의 급작스러운 병세 악화로 퇴원이 미루어지자 메이는 걱정이 되어 어머니를 만나러 가려고
+                                고집을 부리기 시작하고 사츠키는 아버지에게 연락 후 메이를 달래지만 메이가 고집을 꺾지 않아 고민이 앞선다.</p>
+                            <p>그러다가 메이가 샌들 하나만 두고 실종되자 사츠키는 메이를 찾아달라며 토토로에게 부탁을 하게 되고...</p>
+                        </div>
+                    </div>
+
+                </figcaption>
+            </figure>
+            <div class="Character">
+                <h2>Character</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./images/사츠키.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>쿠사카베 사츠키</h4>
+                                    <p>Satsuki /サツキ (草壁サツキ)</p>
+                                </div>
+                                <p>쿠사카베 가의 장녀로, 메이의 언니.<br>
+                                    씩씩하고 밝은 성격을 가진 단발머리의 소녀다. 비가 몹시 쏟아지던 날 버스 정류장에서 아빠를 기다리다가 토토로를 만나게 된다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/메이.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>쿠사카베 메이</h4>
+                                    <p>Mei / メイ (草壁メイ)</p>
+                                </div>
+                                <p>사츠키의 여동생. 아빠와 언니를 잘 따른다. 숲에서 놀다가 조그맣고 이상한 동물을 발견하고 뒤를 쫓아 숲속으로 들어가는데, 그곳에서 도토리 나무의 요정 토토로를 만난다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/타츠오.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>쿠사카베 타츠오</h4>
+                                    <p>Tatsuo / お父さん 草壁タツオ</p>
+                                </div>
+                                <p>사츠키와 메이의 아빠. 사츠키와 메이의 말을 그냥 넘기지 않고 하나하나 일일이 챙겨주는 자상한 아빠다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/야스오.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>쿠사카베 야스코</h4>
+                                    <p>Yasuko / お母さん</p>
+                                </div>
+                                <p>사츠키와 메이의 엄마.감기 비슷한 증세를 보여 잠시만 입원해 있기만 하면 된다고 하지만 실제로는 결핵 비슷한 증세로 오래 입원하는 듯하다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/토토로.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>토토로</h4>
+                                    <p>Totoro / トトロ</p>
+                                </div>
+                                <p>실루엣만 보면 커다란 토끼나 부엉이 같은 느낌이다. 사츠키네 집 뒤에 있는 커다란 녹나무 아래의 동굴에서 생활하며 버섯과 도토리를 먹으며 평상시에는 잠을 자며 시간을 보낸다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/칸타.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>칸타</h4>
+                                    <p>Kantar / カンタ</p>
+                                </div>
+                                <p>츠키가 시골로 이사를 온 이후 처음 만난 또래의 소년. 약간 무뚝뚝해보이지만 마음은 누구보다도 상냥한 소심하고도 수줍은 소년.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bd">
+                        <figure>
+                            <img src="./images/칸타의 할머니.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>칸타의 할머니</h4>
+                                    <p>grandmother / おばあちゃん</p>
+                                </div>
+                                <p>사츠키네 가족이 이사를 온 집의 이웃 할머니로, 사츠키네 가족에게 여러 도움을 주며 사츠키와 메이를 친손녀처럼 아껴준다. </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="art4">
+            <figure>
+                <img src="./images/벼랑위의 포뇨.jpg" alt="">
+                <figcaption>
+                    <div class="col">
+                        <h2>"그녀의 가출에<br>
+                            온 바다가 들썩거리기 시작한다!"</h2>
+                        <h3>Genre</h3>
+                        <p  class="inner">애니메이션, 가족, 어드벤처</p>
+                    </div>
+                    <div class="summary">
+                        <h3>synopsis</h3>
+                        <div class="inner">
+                            <p> 따분한 바다 생활에 질린 나머지 몰래 집을 빠져나온 인면어 한 마리. 해파리에 숨어들어 수면 위로 향하던 중 유리병에 갇히고 어망에 끌렸다가 겨우 탈출하지만 기절하고
+                                만다. 다행히도 마침 밖으로 놀러나온 소스케가 그것을 발견하고는 유리병을 돌로 깨부숴 구한다.</p>
+                            <p> 요양 시설에서 일하는 어머니와 같이 사는 다섯 살 소년 소스케는 바닷가에서 놀다가 발견한 인면어에게 포뇨라는 이름을 지어주고 물을 채운 양동이에 넣어
+                                어린이집에 가져간다. 하지만 바로 인근 요양원의 할머니 중 한 분의 눈에는 영 마음에 들지 않는 모양. 한편 인간이기를 포기한 포뇨의 아버지인 후지모토는 딸을
+                                찾아 다니다 바닷가에 숨어서 소스케와 노는 것을 보고 해일을 일으켜 포뇨를 데려간다.</p>
+                            <p>바다로 돌아간 포뇨는 소스케의 피가 작용을 해 팔다리가 생기게 되지만 인간을 싫어하는 후지모토는 마법의 힘을 통해 포뇨를 물거품에 가두고 강제로 진정시킨다. 하지만
+                                포뇨는 정신을 차리자마자 다시 팔다리를 뻗고 탈출을 시작하고, 우물의 힘을 통해 완전한 인간이 되어 동생들과 함께 바다에 엄청난 소동을 일으키면서까지 소스케를
+                                찾아가기 시작한다.</p>
+                        </div>
+                    </div>
+
+                </figcaption>
+            </figure>
+            <div class="Character">
+                <h2>Character</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./images/포뇨.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>포뇨</h4>
+                                    <p>Ponyo / ポニョ</p>
+                                </div>
+                                <p>후지모토와 바다의 여신 그랑 맘마레의 첫째 딸. 5살의 붉은 인면어로 인간일때도 상당히 귀여운 외모이다.
+                                    포뇨는 소스케가 지어준 이름이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/소스케.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>소스케</h4>
+                                    <p>Sosuke /宗介</p>
+                                </div>
+                                <p>벼랑 위에 있는 2~3층 정도 되는 주택에서 엄마와 함께 살고 있다. 아빠인 코이치는 직업이 선장이라 자주 귀가하지 못한다. 때묻지 않은 올곧고 바른 순수한 심성의 소년이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/후지모토.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>후지모토</h4>
+                                    <p>Fujimoto / 藤本</p>
+                                </div>
+                                <p>소스케에게 가는 과정에서 엄청난 해일을 몰고 와 자칫하면 지구가 멸망할 위기에 처하게 되자, 이를 막기 위해 다시 포뇨를 찾는다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/그랑 맘마래.jpg.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>그랑 맘마레</h4>
+                                    <p>Granmammare / グランマンマレ</p>
+                                </div>
+                                <p>포뇨의 어머니이다.<br>
+                                    포뇨가 인간으로 살아가기를 결심하자, 자신의 힘으로 포뇨의 마법을 모조리 없애버리고 소스케에게 포뇨를 맡긴다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bd">
+                        <figure>
+                            <img src="./images/리사.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>리사</h4>
+                                    <p>Lisa / リサ</p>
+                                </div>
+                                <p>주인공 소스케의 어머니. 소스케의 어린이집과 지척인 해바라기 집이라는 노인 요양 시설에서 일한다.  </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="art5">
+            <figure>
+                <img src="./images/센과 치히로.jpg" alt="">
+                <figcaption>
+                    <h2>"금지된 세계의 문이 열렸다!"</h2>
+                    <div class="col">
+                        <h3>Genre</h3>
+                        <p  class="inner">애니메이션, 다크 판타지, 어드벤처, 드라마</p>
+                    </div>
+                    <div class="summary">
+                        <h3>synopsis</h3>
+                        <div class="inner">
+                            <p> 이사 가던 날, 수상한 터널을 지나자 인간에게는 금지된 신들의 세계로 오게 된 치히로...
+                                신들의 음식을 먹은 치히로의 부모님은 돼지로 변해버린다.
+                            </p>
+                            <p>
+                                “걱정마, 내가 꼭 구해줄게…”
+                                겁에 질린 치히로에게 다가온 정체불명의 소년 하쿠.
+                                그의 따뜻한 말에 힘을 얻은 치히로는
+                                인간 세계로 돌아가기 위해 사상 초유의 미션을 시작하는데…</p>
+                        </div>
+
+                    </div>
+
+                </figcaption>
+            </figure>
+            <div class="Character">
+                <h2>Character</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./images/치히로.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>치히로</h4>
+                                    <p>Chihiro Ogino / 荻おぎ野の 千ち</p>
+                                </div>
+                                <p>극 중 주인공이다.<br>
+                                    작중 진행에 따라 "센"이라는 가명을 쓰게 된다.
+                                    부모님을 구하기 위해 유바바의 온천탕에서 일하게 된다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/하쿠.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>하쿠</h4>
+                                    <p>ハク / Haku</p>
+                                </div>
+                                <p>곤경에 빠진 치히로를 도와주는 극 중 남자주인공. 치히로보다 먼저 유바바에게 이름을 빼앗겨 지배당했지만 치히로로 인해 자신의 이름을 찾게된다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/유바바.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>유바바</h4>
+                                    <p>Yubaba / 湯婆婆</p>
+                                </div>
+                                <p>사람이나 요괴 등 여러 존재의 이름을 빼앗아서 지배하는데, 이름을 빼앗긴 사람의 본명에 대한 기억까지 없앤다. 굉장히 괴팍하고 음험한 데다, 잔혹하며 무자비한 성격에 돈을 엄청나게 밝히는 물질만능주의자이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/가마 할아범.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>가마 할아범</h4>
+                                    <p>grandfather / 駕籠おじいさん</p>
+                                </div>
+                                <p>유바바가 운영하는 온천장의 보일러실에서 일하는 할아버지 요괴. 치히로가 일 할 수 있도록 도와준 인물이다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./images/가오나시.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>가오나시</h4>
+                                    <p>カオナシ(顔無し)/No-Face</p>
+                                </div>
+                                <p>없어보이는 겉모습과는 다르게, 작중에서 가오나시가 보여준 능력은 어느 누구도 지니지도, 모방하지도 못할 만큼 경이롭다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure  class="even">
+                            <img src="./images/보오.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>보오</h4>
+                                    <p>Boh / 坊</p>
+                                </div>
+                                <p>유바바의 아들이자 제니바의 조카.<br>
+                                    제니바의 마법으로 쥐로 변하게 된다.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bd">
+                        <figure>
+                            <img src="./images/숯 검댕이들.jpg" alt="">
+                            <figcaption>
+                                <div class="name">
+                                    <h4>숯 검댕이들</h4>
+                                    <p>きずみ / Charcoal</p>
+                                </div>
+                                <p>가마 할아범을 도와주는 귀여운 일꾼.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <div class="btn">
+        <a href="#" class="prev"><img src="./images/prev.png" alt=""></a>
+        <a href="#" class="next"><img src="./images/next.png" alt=""></a>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./jquery.mCustomScrollbar.js"></script>
+    <script>
+        $("article").mCustomScrollbar({
+            theme: "minimal-dark"
+        });
+        let cnt = 0
+        $('a.prev').click(function () {
+            $(this).addClass('on')
+            $('a.next').removeClass('on')
+            cnt--
+            console.log(cnt)
+            if (cnt == 0) {
+                $('section').stop().animate({ 'left': '0' })
+                $(this).removeClass('on')
+                $('a.prev').fadeOut()
+
+            }
+            else { $('section').stop().animate({ 'left': '+=360px' }) }
+
+        })
+        $('a.next').click(function () {
+            $('a.prev').fadeIn()
+            $(this).addClass('on')
+            $('a.prev').removeClass('on')
+            cnt++
+            console.log(cnt)
+            if (cnt == 5) {
+                $('section').stop().animate({ 'left': '-=180px' })
+                $('section').stop().animate({ 'left': '0' })
+                $('a.prev').fadeOut()
+                $(this).removeClass('on')
+                cnt = 0
+            }
+            else { $('section').stop().animate({ 'left': '-=360px' }) }
+        })
+
+    </script>
+</body>
+
+</html>

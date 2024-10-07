@@ -1,0 +1,167 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: right bottom;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+
+header p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main video {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+main .video {
+    position: relative;
+}
+
+.main-container {
+    position: absolute;
+    top: 270px;
+    left: 130px;
+}
+
+button {
+    background: #ffb5c1;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-visual {
+    position: absolute;
+    bottom: 0px;
+    left: 43%;
+    margin-left: 300px;
+    transition: 3s;
+}
+.main-visual.on {
+    transform: translateX(1000px);
+}
+
+
+.menu {
+    text-align: center;
+    position: relative;
+}
+
+#sect1 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.line-box span {
+    position: absolute;
+}
+
+.top {
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+}
+
+.sect1-contants img {
+    width: 600px;
+}
+
+.bottom {
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    right: 0;
+    bottom: 0;
+}
+
+.right {
+    width: 2px;
+    height: 0%;
+    background: #000;
+    display: block;
+    top: 0;
+    right: 0;
+}
+
+.left {
+    width: 2px;
+    height: 0%;
+    background: #000;
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+.sect1-contants {
+    display: none;
+}
+
+.sect1-contants .btn1close {
+    display: block;
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    background: #000;
+    right: 0;
+    top: 0;
+}
+
+#sect2 {
+    width: 100%;
+    height: 0px;
+    background: #ffb5c1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+#sect2 .btn2close {
+    display: block;
+    position: absolute; 
+    padding: 10px;
+    color: #fff;
+    background: #000000;
+    right: 0%;
+    top: 0;
+    z-index: 99;   
+}

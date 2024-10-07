@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "noto-sans";
+  src: url(/NotoSansCJKkr-Light.woff);
+}
+body {
+  font-family: "noto-sans";
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header h1 img {
+  width: 300px;
+}
+header .main img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sect1 {
+  padding: 0 100px;
+  background: #D8E0DC;
+}
+.sect1 .row {
+  flex-direction: row-reverse;
+}
+.sect1 .right {
+  text-align: right;
+}
+.sect1 .contants {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+.sect1 .contants > div {
+  width: 50%;
+}
+.sect1 .contants img {
+  width: 600px;
+}
+.sect1 .contants .item {
+  text-align: center;
+}
+.sect1 .contants .caption {
+  padding-top: 250px;
+}
+.sect1 .contants .caption h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 30px;
+}
+.sect1 .contants .caption p {
+  line-height: 30px;
+  font-weight: 600;
+  color: #555;
+}
+.sect1 .contants .caption .right {
+  text-align: right;
+}
+
+.sect2 {
+  width: 1400px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.sect2 .sect2-inner h2 {
+  font-size: 40px;
+  padding: 30px 0;
+}
+.sect2 .sect2-inner p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 20px;
+}
+.sect2 ul.sub {
+  display: flex;
+  gap: 100px;
+}
+.sect2 ul.sub li p {
+  color: #866d4b;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.sect2 ul.sub li h3 {
+  cursor: pointer;
+}
+.sect2 ul.sub li img {
+  width: 400px;
+}
+
+.sect3 ul {
+  display: flex;
+}
+.sect3 ul li.infor {
+  width: 60%;
+  background: #95826E;
+  padding: 100px;
+}
+.sect3 ul li.infor img {
+  width: 250px;
+}
+.sect3 ul li.infor h2 {
+  padding-top: 100px;
+  font-size: 40px;
+  color: #fff;
+}
+.sect3 ul li.infor p {
+  padding-top: 70px;
+  line-height: 30px;
+  color: #fff;
+}
+.sect3 ul li.map {
+  width: 40%;
+}
+.sect3 ul li.map img {
+  width: 760px;
+}/*# sourceMappingURL=Details.css.map */

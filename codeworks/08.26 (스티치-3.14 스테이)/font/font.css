@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: "Dream Avenue";
+    src: url("Dream-Avenue.eot");
+    src: url("Dream-Avenue.eot?#iefix")format("embedded-opentype"),
+    url("Dream-Avenue.woff2")format("woff2"),
+    url("Dream-Avenue.woff")format("woff"),
+    url("Dream-Avenue.ttf")format("truetype"),
+}
+

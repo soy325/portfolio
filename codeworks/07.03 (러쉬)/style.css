@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* 상단바 */
+.flex {
+    display: flex;
+}
+
+button {
+    border: none;
+}
+
+b {
+    font-weight: normal;
+}
+
+header {
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+    z-index: 999;
+}
+
+.head {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+}
+
+.head img {
+    width: 200px;
+}
+
+
+nav {
+    position: absolute;
+    right: 0%;
+    top: 70%;
+    font-size: 20px;
+    width: 40%;
+    color: #fff;
+}
+
+nav ul li {
+    width: 25%;
+    text-align: center;
+}
+nav ul li:hover{color: #18A957;
+cursor: pointer;}
+
+/* sect1 */
+.fullbg {
+    background-image: url(./images/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 999;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.fullbg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.intro {
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 748px;
+    position: relative;
+    z-index: 99;
+}
+
+.introh {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 99;
+    color: #fff;
+}
+
+.introp {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.introbt {
+    color: #18A957;
+    border: 1px solid #18A957;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: inherit;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.introbt:hover {
+    background-color: #18A957;
+    color: #fff;
+}
+
+/* sect2 */
+.title h2 {
+    color: #18A957;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.title p {
+    font-size: 16px;
+    color: #888;
+    line-height: 30px;
+}
+
+.sect2 {
+    background-color: #fff;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 150px 0;
+}
+
+.title {
+    width: 50%;
+}
+
+.caption {
+    width: 50%;
+}
+
+.caption p {
+    font-size: 18px;
+    color: #666666;
+    font-weight: normal;
+    padding-bottom: 40px;
+    line-height: 35px;
+}
+
+/* sect3 */
+.sect3 {
+    background-color:#eff7e0;
+    padding: 104px 0 69px;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.item {
+    text-align: center;
+    padding-bottom: 104px;
+}
+
+.item h2 {
+    font-size: 30px;
+    color: #18A957;
+}
+
+.city {
+    justify-content: space-between;
+}
+
+.city li {
+    width: 48%;
+}
+
+.sect3 ul img {
+    width: 100%;
+}
+
+figcaption {
+    background-color: #fff;
+    text-align: center;
+    color: #484848;
+    font-weight: 700;
+    font-size: 23.4px;
+    padding: 46.8px 23.4px;
+
+}
+
+ul.but {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 85px;
+    gap: 20px;
+}
+
+button {
+    background-color: inherit;
+    border-radius: 4px;
+    padding: 20px 50px;
+    color: #18A957;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid #18A957;
+}
+button:hover {
+    background-color: #18A957;
+    color: #fff;
+}
+
+/******sect4*******/
+.sect4 .container {
+    width: 1386px;
+    margin: auto;
+}
+
+.sect4 .item {
+    padding: 50px 0 50px;
+}
+
+.sect4 .container ul.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.sect4 .container ul li {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect4 .container ul li .summary {
+    width: 60%;
+}
+
+.sect4 .container ul li figure {
+    width: 30%;
+}
+
+.sect4 .container ul li figure img {
+    width: 83%;
+    border-radius: 99px;
+    /* border: 8px solid rgba(144, 144, 144, 0.250); */
+}
+
+.sect4 .container ul li:nth-child(odd) figure {
+    order: 2;
+}
+
+.sect4 .container ul li:nth-child(odd) .summary {
+    order: 1;
+}
+
+.even {
+    text-align: right;
+}
+
+h2 {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #484848;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.list-title {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.list-text {
+    font-style: normal;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/******sect5*******/
+.sect5 {
+    background-image: url(./images/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 468px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.sect5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+.sect5 .container {
+    width: 1250px;
+    margin: auto;
+    position: absolute;
+    top: -7px;
+    left: 350px;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+}
+
+
+.sect5 h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sect5 h2 {
+    font-size: 29px;
+    font-weight: 400;
+    color: #aaa;
+    padding-bottom: 30px;
+}
+
+.footer2 {
+    padding: 128px 0 96px 0;
+    background-color: rgb(246, 246, 246);
+}
+
+.footer2 ul {
+    justify-content: center;
+}
+
+.footer2 ul li {
+    font-size: 40px;
+    color: #484848;
+}
+
+.footer2 ul {
+    gap: 65px;
+}
+
+.site {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.red {
+    color: red;
+    text-decoration-line: underline;
+}
+
+/* 반응형 웹페이지 설정 */
+/* 모바일 */
+@media screen and (max-width:767px) {
+    header nav{display: none;}
+    .title {
+        width: 100%;
+    }
+    
+    .caption {
+        width: 100%
+    }
+    .sect2 .container{flex-wrap: nowrap;}
+}
+    
+
+
+@media screen and (min-width:768px) {
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+}

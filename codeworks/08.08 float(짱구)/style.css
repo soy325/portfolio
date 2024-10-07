@@ -1,0 +1,215 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(./bg.jpg);
+    font-family: 'LeeSeoyun';
+}
+
+/* 공통속성 */
+.wrap {
+    max-width: 1420px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    box-shadow: 0 0 50px #ccc;
+    backdrop-filter: blur(20px);
+    margin: 10px auto;
+}
+
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article ul li {
+    float: left;
+}
+
+/* h1 {
+    width: 300px;
+    height: 50px;
+    background: #fff url(./repeat-logo.png) center no-repeat;
+} */
+
+header h1 img {
+    height: 850px;
+}
+
+
+.intro p {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+
+.intro .video {
+    float: left;
+    width: 50%;
+}
+
+.summary::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    float: left;
+    width: 30%;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+nav ul a {
+    padding: 20px
+}
+
+nav a {
+    display: block;
+    background-image: url(./line.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-position: center bottom;
+
+}
+
+.intro h2 {
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.intro .summary {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.character h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+article figure{text-align: center;
+margin-bottom: 20px;}
+
+article figure img{ width: 100%; height:194.25px ; object-fit:cover ;}
+article figcaption {
+    font-size: 23px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+
+@media screen and (max-width:600px) {
+    article ul li {
+        width: 49%;
+    }
+
+    .nav {
+        position: absolute;
+    }
+
+    h1 {
+        background: none;
+        border: 1px solid #000;
+        width: 100%;
+        height: 67px;
+        text-align: center;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) {
+    header {
+        width: 26%;
+        float: left;
+    }
+
+    main {
+        width: 72%;
+        float: right;
+    }
+
+    article ul li {
+        width: 32%;
+    }
+
+    footer {
+        width: 72%;
+        float: right;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    header {
+        width: 100%;
+        float: none;
+    }
+
+    h1 {
+        width: 26%;
+        float: left;
+    }
+
+    nav {
+        width: 72%;
+        float: right;
+    }
+
+    article ul li {
+        width: 19%;
+    }
+
+    header ul {
+        float: left;
+    }
+}

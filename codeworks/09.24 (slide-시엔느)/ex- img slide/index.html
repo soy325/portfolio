@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <main>
+        <div class='hslide-container'>
+            <div class="hslide-wrap">
+                <div class="hslide hslide4">hslide4</div>
+                <div class="hslide hslide1">hslide1</div>
+                <div class="hslide hslide2">hslide2</div>
+                <div class="hslide hslide3">hslide3</div>
+            </div>
+        </div>
+        <div class='vslide-container'>
+            <div class="vslide-wrap">
+                <div class="vslide vslide4">vslide4</div>
+                <div class="vslide vslide1">vslide1</div>
+                <div class="vslide vslide2">vslide2</div>
+                <div class="vslide vslide3">vslide3</div>
+            </div>
+        </div>
+        
+    </main>
+    <button class="prev"><img src="/images/prev.png" alt=""></button>
+    <button class="next"><img src="/images/next.png" alt=""></button>
+</body>
+<script src="./script/jquery-3.7.1.js"></script>
+<script>
+    $('button.next').click(function(){
+        $('.hslide-wrap').stop().animate({'left': '-200%'},function(){
+            $('.hslide').first().appendTo('.hslide-wrap')
+            $('.hslide-wrap').css({'left':'-100%'})
+        })
+        $('.vslide-wrap').stop().animate({'top': '-200%'},function(){
+            $('.vslide').first().appendTo('.vslide-wrap')
+            $('.vslide-wrap').css({'top':'-100%'})
+        })
+    })
+    $('button.prev').click(function(){
+        $('.hslide-wrap').stop().animate({'left': '-0%'},function(){
+            $('.hslide').last().prependTo('.hslide-wrap')
+            $('.hslide-wrap').css({'left':'-100%'})
+        })
+        $('.vslide-wrap').stop().animate({'top': '0%'},function(){
+            $('.vslide').last().prependTo('.vslide-wrap')
+            $('.vslide-wrap').css({'top':'-100%'})
+        })
+    })
+</script>
+</html>

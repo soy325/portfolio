@@ -1,0 +1,136 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url(/NotoSansCJKkr-Light.woff);
+}
+
+body {
+    font-family: 'NotoSans';
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    width: 150px;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    img {
+        width: 100%;
+    }
+}
+
+figure {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    video {
+        position: absolute;
+        width: 100%;
+        min-width: 1920px;
+        left: 0;
+        top: 0;
+
+        &.hide {
+            opacity: 0;
+            transition: .35s;
+        }
+    }
+
+
+}
+
+section.visual {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/solbeach.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    ul {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        li {
+            width: 20%;
+            border-right: 1px solid rgba(109, 109, 109, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            img {
+                width: 250px;
+
+            }
+
+            &.col:hover {
+                background: rgba(0, 0, 0, .8);
+            }
+
+            &.col:hover .summary {
+                transition: .35s;
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .summary {
+                color: #fff;
+                padding: 0 20px;
+                opacity: 0;
+                transform: translateY(180px);
+
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    border-bottom: 1px solid #aaa;
+                    padding-bottom: 10px;
+
+                }
+
+                p {
+                    padding: 10px 0;
+                    line-height: 20px;
+                    font-weight: normal;
+                    font-size: 13px;
+                }
+
+                button {
+                    background-color: inherit;
+                    border: none;
+                    color: #DA6C35;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: #fff;
+                        border-bottom: 1px solid #DA6C35;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.frame {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: 0.3s linear;
+    background: #fff;
+    z-index: 999;
+}

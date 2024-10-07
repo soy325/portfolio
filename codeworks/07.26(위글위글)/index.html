@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위글위글</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><img src="./images/logo_white.png" alt="logo"></h1>
+    <p>BELLYGOM X WiggleWiggle</p>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="video">
+        <video src="./images/[Wiggle Wiggle X PETHROOM] Nose Work Toy -  Jelly Mix.mp4" autoplay muted loop></video>
+      </div>
+      <div class="menu">
+        <button class="btn1">
+          <a href="#">COLLABO</a>
+        </button>
+        <button class="btn2">
+          <a href="#">THE MOLE</a>
+        </button>
+      </div>
+    </div>
+    <div class="main-visual">
+      <img src="./images/벨리곰.png" alt="">
+    </div>
+  </main>
+  <section id="sect1">
+    <div class="line-box">
+      <span class="top"></span>
+      <span class="right"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+    </div>
+    <div class="sect1-contants">
+      <figure>
+        <img src="./images/92f5cfa87069f6fc41aa20aa36d6851f.webp" alt="image">
+      </figure>
+      <p></p>
+      <a href="#" class="btn1close">닫기</a>
+    </div>
+
+  </section>
+  <section id="sect2">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/item (1).jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (1).webp" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (2).jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (2).webp" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (3).jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (3).webp" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item (4).jpg" alt=""></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <a href="#" class="btn2close">닫기</a>
+  </section>
+  <script src="./script/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script/index.js"></script>
+  <!-- Swiper JS -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+</body>
+
+</html>
