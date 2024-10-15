@@ -164,13 +164,49 @@
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide slide1"></div>
-          <div class="swiper-slide slide2"></div>
-          <div class="swiper-slide slide3"></div>
-          <div class="swiper-slide slide4"></div>
-          <div class="swiper-slide slide5"></div>
-          <div class="swiper-slide slide6"></div>
-          <div class="swiper-slide slide7"></div>
+          <div class="swiper-slide slide1">
+            <div class="summary summary1">
+              <p>2022.05.10.<br>
+                <span>청와대, 국민의 품으로</span>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide2">
+            <div class="summary summary2">
+              <p>"청와대는 임기 시작인<br>
+                <span>5월 10일</span>에 개방하여<br>
+                <span>국민께</span>돌려드리겠습니다.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide3">
+            <div class="summary summary3">
+              <p>"본관, 영빈관을 비롯하여 ..</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide4">
+            <div class="summary summary4">
+              <p>최고의 정원이라 불리는<br>
+                녹지원과 상춘재를 <span>모두</span><br>
+                <span>국민들의 품</span>으로 돌려드리겠습니다.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide5">
+            <div class="summary summary5">
+              <p>"경복궁 지하철역에서 경복궁을 거쳐 청와대를 거쳐 ..</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide6">
+            <div class="summary summary6">
+              <p>북안산으로의 등반로 역시 <span>개방</span>되는 것 입니다."</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide7">
+            <div class="summary summary7">
+              <p><span>약속 실천으로 시작합니다.</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -182,9 +218,14 @@
   </main>
   <footer>footer</footer>
   <script src="./jquery-3.7.1.js"></script>
-  <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script src="./splitText.js"></script>
+
+  <!-- <script src="./index.js"></script> -->
   <script>
+    // swiper
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       effect: "fade",
@@ -194,6 +235,62 @@
         disableOnInteraction: false,
       },
     });
+
+    // splitText
+    gsap.registerEffect({
+      name: 'textEffect',
+      extendTimeLine: true,
+      defaults: {
+        x: 50,
+        y: -50,
+        opacity: 0
+      },
+      
+      // 기본속성은 config인데 x,y,opacity 값을 각각 싸주는 것이 귀찮아 { x, y, opacity }이걸로 활용함.
+      // effect: (target, config) => {
+      effect: (target, { x, y, opacity }) => {
+        console.log(target);
+        const { chars } = new SplitText(target, { type: 'chars' })
+        const tl = gsap.timeline()
+        gsap.effects.textEffect(target)
+        tl.from(chars, {
+          opacity: opacity,
+          scale: 1,
+          x: x,
+          stagger: .05
+        })
+        tl.to(chars, {
+          delay: 2,
+          opacity: opacity,
+          y: y,
+          duration: 1,
+          stagger: .05
+        })
+        
+        return tl;
+        
+      }
+    })
+
+    const tl = gsap.timeline({ repeat: -1 });
+
+    tl.textEffect('.summary1')
+    .textEffect('.summary2')
+    .textEffect('.summary3')
+    .textEffect('.summary4')
+    .textEffect('.summary5')
+    .textEffect('.summary6')
+    .textEffect('.summary7')
+    
+  //   tl.add(gsap.effects.textEffect('.summary1'))
+  // .add(gsap.effects.textEffect('.summary2'))
+  // .add(gsap.effects.textEffect('.summary3'))
+  // .add(gsap.effects.textEffect('.summary4'))
+  // .add(gsap.effects.textEffect('.summary5'))
+  // .add(gsap.effects.textEffect('.summary6'))
+  // .add(gsap.effects.textEffect('.summary7'));
+
+
   </script>
 </body>
 
