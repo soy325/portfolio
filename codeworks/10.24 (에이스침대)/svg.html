@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 1280px;
+            margin: auto;
+            border: 1px solid #000;
+            height: 150px;
+            position: relative;
+        }
+
+        svg {
+            width: 50px;
+            height: 150px;
+            cursor: pointer;
+        }
+
+        path {
+            stroke: #c9c9c9;
+            stroke-width: 4;
+            stroke-linecap: round;
+            transition: .5s;
+            fill: transparent;
+        }
+
+        .arrow {
+            position: absolute;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <a href="#" class="arrow prev">
+            <svg>
+                <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+            </svg>
+        </a>
+        <a href="#" class="arrow next">
+            <svg>
+                <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+            </svg>
+        </a>
+    </div>
+    <script>
+        const prev = document.querySelector('.prev')
+        const next = document.querySelector('.next')
+
+        prev.addEventListener('mouseenter',function(){
+            this.querySelector('path').setAttribute('d','M 40 10 Q 10 65 40 140');
+        })
+        prev.addEventListener('mouseleave',function(){
+            this.querySelector('path').setAttribute('d','M 40 10 Q 40 65 40 140');
+        })
+        next.addEventListener('mouseenter',function(){
+            this.querySelector('path').setAttribute('d','M 10 10 Q 40 65 10 140');
+        })
+        next.addEventListener('mouseleave',function(){
+            this.querySelector('path').setAttribute('d','M 10 10 Q 10 65 10 140');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .tab-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+
+        #tabbox1,
+        #tabbox2 {
+            width: 50%;
+            border: 1px solid #000;
+        }
+
+        .tab-menu {
+            display: flex;
+        }
+
+        .tab-menu li {
+            flex: 1;
+        }
+
+        .tab-menu li a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tab-menu li a.on {
+            background: #333;
+            color: #fff
+        }
+
+        .tabs {
+            position: relative;
+            height: 84px;
+        }
+
+        .tab {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fdd;
+            display: none;
+        }
+
+        .tab.on {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="tab-container">
+        <div id="tabbox1">
+            <ul class="tab-menu">
+                <li><a href="#tab1">menu1</a></li>
+                <li><a href="#tab2">menu2</a></li>
+                <li><a href="#tab3">menu2</a></li>
+                <li><a href="#tab4">menu3</a></li>
+            </ul>
+            <div class="tabs">
+                <div class="tab" id="tab1">tab1_1</div>
+                <div class="tab" id="tab2">tab1_2</div>
+                <div class="tab" id="tab3">tab1_3</div>
+                <div class="tab" id="tab4">tab1_4</div>
+            </div>
+        </div>
+        <div id="tabbox2">
+            <ul class="tab-menu">
+                <li><a href="#tab5">menu1</a></li>
+                <li><a href="#tab6">menu2</a></li>
+                <li><a href="#tab7">menu2</a></li>
+                <li><a href="#tab8">menu3</a></li>
+            </ul>
+            <div class="tabs">
+                <div class="tab" id="tab5">tab2_1</div>
+                <div class="tab" id="tab6">tab2_2</div>
+                <div class="tab" id="tab7">tab2_3</div>
+                <div class="tab" id="tab8">tab3_4</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script>
+
+        // // 자바스크립트 //////////////////////////////////////////////////
+
+        // // 초기값 설정
+        // // tab-menu에 첫번째 li a.on
+        // // $('.tab-menu li:first-child a').addClass('on')
+        // // tab-menu에 첫번째가 여러개가 존재 하므로 배열로 정리
+        // const a_first = document.querySelectorAll('.tab-menu li:first-child a')
+        // for (let link of a_first) {
+        //     link.classList.add('on')
+        // }
+        // // 첫번째 tab.on
+        // // $('.tab:first-child').addClass('on')
+        // const tab_first = document.querySelectorAll('tab:first-child')
+        // for (let tab of tab_first) {
+        //     tab.classList.add('on')
+        // }
+        // // --------------------------
+        // tabfuc('#tabbox1')
+        // tabfuc('#tabbox2')
+        // // ---------------------------
+        // function tabfuc(target) {
+        //     // target 하위에 있는
+        //     let targetElem = document.querySelector(target)
+        //     let aElems = targetElem.querySelectorAll('.tab-menu li a')
+        //     // -----------------------
+        //     //   $(target).find('.tab-menu li a').click(function () {
+        //     aElems.forEach(function (aElem) {
+        //         aElem.addEventListener('click', function (e) {
+        //             e.preventDefault()
+        //             // $(target).find('.tab-menu li a').removeClass('on')
+        //             for (let menu of targetElem.querySelectorAll('.tab-menu li a')) {
+        //                 menu.classList.remove('on')
+        //             }
+        //             // $(this).addClass('on')
+        //             this.classList.add('on')
+
+        //             // let href = $(this).attr('href')
+        //             let href = this.getAttribute('href')
+        //             // $(target).find('.tab').removeClass('on')
+        //             for (let tab of targetElem.querySelectorAll('.tab')) {
+        //                 tab.classList.remove('on')
+        //             }
+        //             // $(href).addClass('on')
+        //             targetElem.querySelector(href).classList.add('on')
+        //         })
+        //     })
+        // }
+
+
+        // 제이커리 ///////////////////////////////////////////////////////////
+
+        // 초기값 설정
+        // tab-menu에 첫번째 li a.on
+        // $('.tab-menu li:first-child a').addClass('on')
+
+        // 첫번째 tab.on
+        // $('.tab:first-child').addClass('on')
+        // -----------------------
+
+        // tabfuc('#tabbox1')
+        // tabfuc('#tabbox2')
+
+        // -----------------------
+        // function tabfuc(target) {
+        //   $(target).find('.tab-menu li a').click(function () {
+        //  let href = $(this).attr('href')
+        //  $(target).find('.tab-menu li a').removeClass('on')
+        //  $(this).addClass('on')
+        //  $(target).find('.tab').removeClass('on')
+        //  $(href).addClass('on')
+        //  })
+        // }
+
+
+        // 자바스크립트 for문 단순화 /////////////////////////
+        tabFunc('#tabbox1');
+        tabFunc('#tabbox2');
+        //반복문에서 변화되는 인수들을 찾아봐요
+        //elements:대상,action:add,remove
+        // 객체[]대괄호 표기법,무슨값이 들어올지 문자값으로 전달되기때문에
+        function controlClass(elements, action) {
+            for (let elem of elements) {
+                elem.classList[action]('on');
+            }
+        }
+
+        const a1st = document.querySelectorAll('.tab-menu li:first-child a');
+        // for (let link of a1st) {
+        //     link.classList.add('on');
+        // }
+        controlClass(a1st,'add')
+
+        const tab1st = document.querySelectorAll('.tabs .tab:first-child');
+        // for (let tab of tab1st) {
+        //     tab.classList.add('on');
+        // }
+        controlClass(tab1st,'add')
+        function tabFunc(target) {
+            let targetElem = document.querySelector(target);
+            let aElems = targetElem.querySelectorAll('.tab-menu li a');
+            console.log(target);
+            aElems.forEach(function (aElem) {
+                aElem.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // for (let menuItem of targetElem.querySelectorAll('.tab-menu li a')) {
+                    //     menuItem.classList.remove('on');
+                    // }
+                    let menus=targetElem.querySelectorAll('.tab-menu li a')
+                    controlClass(menus,'remove')
+                    
+                    this.classList.add('on');
+
+                    let href = this.getAttribute('href');
+                    // for (let tab of targetElem.querySelectorAll('.tab')) {
+                    //     tab.classList.remove('on');
+                    // }
+                    let tabs=targetElem.querySelectorAll('.tab')
+                    controlClass(tabs,'remove')
+                    targetElem.querySelector(href).classList.add('on');
+                });
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+li.main-menu {
+    position: relative;
+
+    a {
+        display: block;
+        font-size: 14px;
+
+        span {
+            display: block;
+            padding: 10px 0;
+        }
+    }
+
+    >a {
+        height: 41px;
+        text-align: center;
+        font-weight: 600;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            display: block;
+            font-family: "jt-font";
+            content: '\e910';
+            color: #ed4043;
+            font-size: 9px;
+            left: 50%;
+            transform: translate(-50%);
+            top: -15px;
+            opacity: 0;
+        }
+
+        .menu-inner {
+            position: relative;
+            top: -38px;
+            transition: .35s;
+
+        }
+
+        &:hover .menu-inner {
+            top: 0;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    ul.sub-menu {
+        display: none;
+        position: absolute;
+    }
+
+    &:hover>a {
+
+        color: rgb(237, 64, 67);
+    }
+}

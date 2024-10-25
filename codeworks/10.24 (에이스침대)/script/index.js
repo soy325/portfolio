@@ -1,0 +1,12 @@
+// $('li.main-menu').mouseenter(function(){
+//     $('ul.sub-menu').stop().fadeIn()
+// })
+// $('li.main-menu').mouseleave(function(){
+//     $('ul.sub-menu').stop().fadeOut()
+// })
+// $('li.main').mouseenter(function(){
+//     $('ul.sub').stop().fadeIn()
+// })
+// $('li.main').mouseleave(function(){
+//     $('ul.sub').stop().fadeOut()
+// })

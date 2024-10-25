@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이스 침대</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .swiper {
+            width: 1900px;
+            height: 920px;
+            overflow: visible;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="top">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li class="green"><a href="#">웨딩멤버스</a></li>
+            <li class="gray"><a href="#">에이스 침대몰</a></li>
+        </ul>
+        <div class="head">
+            <nav>
+                <ul class="left">
+                    <li class="main-menu">
+                        <a href="#">
+                            <div class="menu-inner">
+                                <span class="one">BED</span>
+                                <span class="hover">침대</span>
+                            </div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">프레임</a></li>
+                            <li><a href="#">매트리스</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">제품 리뉴얼</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">
+                            <div class="menu-inner">
+                                <span class="one">FURNITURE</span>
+                                <span class="hover">가구</span>
+                            </div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">룸 세트</a></li>
+                            <li><a href="#">리빙가구</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">
+                            <div class="menu-inner">
+                                <span class="one">STRESSLESS</span>
+                                <span class="hover">스트레스리스</span>
+                            </div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">1인용 리클라이너</a></li>
+                            <li><a href="#">오피스체어</a></li>
+                            <li><a href="#">소파</a></li>
+                            <li><a href="#">테이블&악세사리</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">
+                            <div class="menu-inner">
+                                <span class="one">SLEEP CARE</span>
+                                <span class="hover">슬립케어</span>
+                            </div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">마이크로케어</a></li>
+                            <li><a href="#">스마트 슬리브</a></li>
+                            <li><a href="#">마이크로케어 쿨링패드</a></li>
+                            <li><a href="#">쿨링 바디필로우</a></li>
+                            <li><a href="#">마이크로가드 에코플러스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1><img src="./images/header-logo.png" alt=""></h1>
+            <nav>
+                <ul class="right">
+                    <li class="main"><a href="#">침대과학</a>
+                        <ul class="sub">
+                            <li><a href="#">스프링</a></li>
+                            <li><a href="#">기술력</a></li>
+                            <li><a href="#">특허 및 수상내역</a></li>
+                            <li><a href="#">침대공학연구소</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">에이스 스토리</a>
+                        <ul class="sub">
+                            <li><a href="#">NOW SNS</a></li>
+                            <li><a href="#">고객후기</a></li>
+                            <li><a href="#">뉴스룸</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">고객체험</a>
+                        <ul class="sub">
+                            <li><a href="#">매트리스 체험존</a></li>
+                            <li><a href="#">이동수면공학 연구소</a></li>
+                            <li><a href="#">공장 견학 신청</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">이벤트</a>
+                        <ul class="sub">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">당첨자 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">매장안내</a>
+                        <ul class="sub">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">에이스 스퀘어</a></li>
+                            <li><a href="#">에이스 에비뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="gnb">
+                    <li><a href="#"><img src="./images/search.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/menu.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section class="sect1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/slide1.jpg" alt=""></div>
+                <div class="swiper-slide"><video src="./images/slide2.mp4" autoplay loop muted></video></div>
+                <div class="swiper-slide"><img src="./images/slide3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/slide4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/slide5.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="arrow next">
+            <svg>
+                <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+            </svg>
+            <p>NEXT</p>
+        </div>
+        <div class="arrow prev">
+            <svg>
+                <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+            </svg>
+            <p>PREV</p>
+        </div>
+    </section>
+    <section class="sect2">
+        <h2>ACE SIENCE</h2>
+        <div id="tabbox">
+            <ul class="tab-menu">
+                <li class="on"><a href="#tab1">HYBRID Z SPRING</a></li>
+                <li><a href="#tab2">5 FREE SYSTEM</a></li>
+                <li><a href="#tab3">NEW MATERIAL</a></li>
+                <li><a href="#tab4">ECO & HEALTH</a></li>
+            </ul>
+            <div class="tabs">
+                <div class="vslide-container">
+                    <div class="vslide-wrap">
+                        <div class="vslide vslide1" id="tab1"><video src="./images/media1.mp4" autoplay muted
+                                loop></video>
+                        </div>
+                        <div class="vslide vslide2" id="tab2"><video src="./images/media2.mp4" autoplay muted
+                                loop></video>
+                        </div>
+                        <div class="vslide vslide3" id="tab3"><video src="./images/media3.mp4" autoplay muted
+                                loop></video>
+                        </div>
+                        <div class="vslide vslide4" id="tab4"><video src="./images/media4.mp4" autoplay muted
+                                loop></video></div>
+                    </div>
+                </div>
+                <div class="hslide-container">
+                    <div class="hslide-wrap">
+                        <div class="hslide hslide1" id="tab1">
+                            <div class="text">
+                                <h3>오늘밤 어떤 스프링으로<br>만든 침대에서<br>주무시겠습니까?</h3>
+                                <p>에이스만의 첨단 공학이 적용된 스프링은 <br>인체 곡선과 하중 분포에 따라 위에서 한 번 <br>부드럽게 맞춰주고 밑에서 또 한번 <br>단단하게
+                                    받쳐줍니다. </p>
+                            </div>
+                        </div>
+                        <div class="hslide hslide2" id="tab2">
+                            <div class="text">
+                                <h3>휴식을 방해하는 <br>모든 것이 사라지는 순간, <br>완벽한 편안함이 <br>시작됩니다</h3>
+                                <p>꺼짐, 빈틈, 쏠림, 소음, 흔들림으로부터<br> 자유롭게! 어떤 몸 상태에도 적용되는 5 FREE<br> SYSTEM으로 최상의 숙면 조건을 만듭니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hslide hslide3" id="tab3">
+                            <div class="text">
+                                <h3>시원하게, 위생적으로 <br>최고의 잠을 위한 <br>새로운 기술</h3>
+                                <p>최고 품질을 위해 중요한 소재 하나하나까지<br> 직접 개발, 생산한 신소재만을 사용합니다</p>
+
+                            </div>
+                        </div>
+                        <div class="hslide hslide4" id="tab4">
+                            <div class="text">
+                                <h3>피부에 가까운 만큼 <br>더욱 안전하게 <br>당신의 하루가 건강해집니다</h3>
+                                <p>최고 품질을 위해 중요한 소재 하나하나까지<br> 직접 개발, 생산한 신소재만을 사용합니다</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="arrow next">
+            <svg>
+                <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+            </svg>
+            <p>NEXT</p>
+        </button>
+        <button class="arrow prev">
+            <svg>
+                <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+            </svg>
+            <p>PREV</p>
+        </button>
+
+
+    </section>
+    <section class="sect3">
+        <h2>ACE COLLECTION</h2>
+        <div id="tabbox2">
+            <ul class="tab-list">
+                <li class="on"><a href="#tab5">신제품</a></li>
+                <li>|</li>
+                <li><a href="#tab6">추천제품</a></li>
+            </ul>
+            <div class="tabs">
+                <div class="tab" id="tab5">
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="tab" id="tab6">
+                </div>
+                <button class="arrow next">
+                    <svg>
+                        <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+                    </svg>
+                    <p>NEXT</p>
+                </button>
+                <button class="arrow prev">
+                    <svg>
+                        <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+                    </svg>
+                    <p>PREV</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="sect4">
+        <h2>ACE NEWS</h2>
+        <div class="sect4-inner">
+            <p>에이스 침대의<br>새로운 소식을 알려드립니다.</p>
+                <div class="sect4-slide">
+                    <div class="open"><img src="./images/open (1).jpg" alt=""></div>
+                    <div class="open"><img src="./images/open (2).jpg" alt=""></div>
+                    <div class="open"><img src="./images/open (3).jpg" alt=""></div>
+                </div>
+            <ul class="tab-index">
+                <li class="on"><a href="#tab8"><span>매장오픈소식</span><br>에이스퀘어 중곡점 OPEN</a></li>
+                <li><a href="#tab7"><span>매장오픈소식</span><br>롯데백화점 잠실점 OPEN</a></li>
+                <li><a href="#tab9"><span>매장오픈소식</span><br>에이스퀘어 의정부점 OPEN</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script src="./script/index.js"></script>
+    <script>
+        // main-slide ////////////////////////////////
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 150,
+            navigation: {
+                nextEl: ".sect1 .next",
+                prevEl: ".sect1 .prev",
+            },
+        });
+
+
+        // svg ///////////////////////////////////////
+
+        const prev = document.querySelectorAll('.prev')
+        const next = document.querySelectorAll('.next')
+
+        // 반복 = for (for, for of, forEach)
+        // 조건 = if
+
+        // const name; (변하지 않는 값)
+        // let age; (변하는 값)
+        //  var (변하는 값)
+
+        prev.forEach(function (prevElem) {
+            prevElem.addEventListener('mouseenter', function () {
+                this.querySelector('path').setAttribute('d', 'M 40 10 Q 10 65 40 140');
+            })
+            prevElem.addEventListener('mouseleave', function () {
+                this.querySelector('path').setAttribute('d', 'M 40 10 Q 40 65 40 140');
+            })
+        })
+
+        next.forEach(function (nextElem) {
+            nextElem.addEventListener('mouseenter', function () {
+                this.querySelector('path').setAttribute('d', 'M 10 10 Q 40 65 10 140');
+            })
+            nextElem.addEventListener('mouseleave', function () {
+                this.querySelector('path').setAttribute('d', 'M 10 10 Q 10 65 10 140');
+            })
+        })
+
+
+        // sect2 ////////////////////////////////////
+        let slide = 0; // 지역변수
+
+        $('.tab-menu li').removeClass('on');
+        $('.tab-menu li').eq(0).addClass('on');
+        $('button.next').click(function () {
+
+            if (slide < 3) { slide += 1; }
+            // slide++;
+            $('.hslide-wrap').stop().animate({ 'left': slide * -100 + "%" })
+            $('.vslide-wrap').stop().animate({ 'top': slide * -100 + "%" })
+            $('.tab-menu li').removeClass('on');
+            $('.tab-menu li').eq(slide).addClass('on');
+
+        })
+
+        $('button.prev').click(function () {
+            if (slide > 0) { slide -= 1; }
+
+            $('.hslide-wrap').stop().animate({ 'left': slide * -100 + '%' })
+            $('.vslide-wrap').stop().animate({ 'top': slide * -100 + "%" })
+            $('.tab-menu li').removeClass('on');
+            $('.tab-menu li').eq(slide).addClass('on');
+        })
+
+
+        // 탭 메뉴 누르면 
+        $('.tab-menu li').click(function (e) {
+            e.preventDefault()
+            let idx = $(this).index()
+            $('.tab-menu li').removeClass('on')
+            $(this).addClass('on')
+            $('.vslide-wrap').animate({ 'top': idx * -100 + '%' })
+            $('.hslide-wrap').animate({ 'left': idx * -100 + '%' })
+        })
+
+        // sect3 /////////////////////////////////////
+        var swiper3 = new Swiper(".mySwiper3", {
+            spaceBetween: 50,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+            navigation: {
+                nextEl: ".sect3 .next",
+                prevEl: ".sect3 .prev",
+            },
+        });
+
+        // $('.tab-list li').click(function () {
+        //     $('.tab-list li').removeClass('on')
+        //     $(this).addClass('on')
+
+        //     let idx = $(this).index()
+        //     $('.tab').hide()
+        //     $('.tab').eq(idx).show()
+        // })
+
+        var swiper4 = new Swiper(".mySwiper4", {
+            spaceBetween: 30,
+            effect: "fade",
+        });
+
+        // $('.tab-index li').click(function (e) {
+        //     e.preventDefault()
+        //     let idx = $(this).index()
+        //     $('.tab-index li').removeClass('on')
+        //     $(this).addClass('on')
+        //     $('.sect4-slide').animate({ 'left': idx * -100 + '%' })
+        // })
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
